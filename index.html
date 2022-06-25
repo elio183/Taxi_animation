@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Taxi animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btn">
+        <strong>☀️</strong>
+        <strong>🌕</strong>
+    </div>
+    <div class="road">
+        <div class="taxi">
+            <div class="light_beam"></div>
+            <span>
+                <b></b>
+                <i></i>
+            </span>
+        </div>
+        <div class="taxi">
+            <div class="light_beam"></div>
+            <span>
+                <b></b>
+                <i></i>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        let body = document.querySelector('body');
+        let btn = document.querySelector('.btn');
+        btn.onclick = function(){
+            body.classList.toggle('light')
+        }
+    </script>
+</body>
+</html>
